@@ -18,7 +18,6 @@ import (
 var (
 	Version   = "v0.0.0-dev"
 	GitCommit = "HEAD"
-	done      = make(chan struct{})
 )
 
 func main() {
