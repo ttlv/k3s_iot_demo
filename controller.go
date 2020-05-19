@@ -155,5 +155,5 @@ func (device *Device) OnPeriphConnected(p gatt.Peripheral, err error) {
 
 func (device *Device) OnPeriphDisconnected(p gatt.Peripheral, err error) {
 	fmt.Println("Disconnected")
-	close(done)
+	close(Done)
 }
