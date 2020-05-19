@@ -100,7 +100,7 @@ func run(c *cli.Context) {
 			gatt.PeripheralDisconnected(dv.OnPeriphDisconnected),
 		)
 		d.Init(dv.OnStateChanged)
-		<-done
+		<-k3s_iot_demo.Done
 		fmt.Println("Done")
 		fmt.Println("Sleep for 10 seconds")
 		time.Sleep(10 * time.Second)

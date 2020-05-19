@@ -25,7 +25,7 @@ type Mqtt struct {
 	Qos    int
 }
 
-var done = make(chan struct{})
+var Done = make(chan struct{})
 
 func (device *Device) OnStateChanged(d gatt.Device, s gatt.State) {
 	fmt.Println("State:", s)
