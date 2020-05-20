@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-temp-demo
+  labels:
+    app: device-temp-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-temp-demo
+  template:
+    metadata:
+      labels:
+        app: device-temp-demo
+    spec:
+      hostNetwork: true
+      nodeSelector:
+        protocol: bluetooth
+      containers:
+        - name: device
+          image: gopherlv/k3s_iot_demo:latest
+          securityContext:
+            privileged: true
+          env:
+            - name: DEVICE_MQTT
+              value: '{"server":"123.206.22.52:30362","topic":"$cattle/device","qos":0}'
+            - name: DEVICE_NAME
+              value: "LYWSD03MMC"
+            - name: DEVICE_MAC_ADDRESS
+              value: A4:C1:38:1A:49:90

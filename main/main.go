@@ -29,17 +29,17 @@ func main() {
 		cli.StringFlag{
 			Name:   "device_name",
 			EnvVar: "DEVICE_NAME",
-			Value:  "LYWSD03MMC",
+			Value:  "", // config your decice name in device-deployment.yaml
 		},
 		cli.StringFlag{
 			Name:   "device_mac_address",
 			EnvVar: "DEVICE_MAC_ADDRESS",
-			Value:  "A4:C1:38:1A:49:90",
+			Value:  "", // config your device mac address name in device-deployment.yaml
 		},
 		cli.StringFlag{
 			Name:   "device_mqtt",
 			EnvVar: "DEVICE_MQTT",
-			Value:  "{\"server\":\"123.206.22.52:30362\",\"topic\":\"$cattle/device\",\"qos\":0}",
+			Value:  "", // config your device mqtt url in device-deployment.yaml
 		},
 	}
 	app.Action = run
