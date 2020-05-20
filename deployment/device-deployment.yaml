@@ -19,7 +19,7 @@ spec:
         protocol: bluetooth
       containers:
         - name: device
-          image: gopherlv/k3s_iot_demo:latest
+          image: gopherlv/k3s-bluetooth-device-demo:arm
           securityContext:
             privileged: true
           env:
