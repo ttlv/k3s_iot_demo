@@ -28,4 +28,4 @@ spec:
             - name: DEVICE_NAME
               value: "LYWSD03MMC"
             - name: DEVICE_MAC_ADDRESS
-              value: A4:C1:38:1A:49:90
+              value: "A4:C1:38:1A:49:90"
