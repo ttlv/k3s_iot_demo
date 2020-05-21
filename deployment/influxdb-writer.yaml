@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: metrics
-          image: guangbo/db-metrics:dev
+          image: gopherlv/db-metrics:latest
           env:
             - name: INFLUXDB_SERVER
               value: ""
