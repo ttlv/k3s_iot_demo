@@ -11,6 +11,11 @@ github.com/bettercap/gatt/linux/util
 github.com/bettercap/gatt/xpc
 # github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d
 github.com/cpuguy83/go-md2man/v2/md2man
+# github.com/influxdata/influxdb1-client v0.0.0-20200515024757-02f0bf5dbca3
+## explicit
+github.com/influxdata/influxdb1-client
+github.com/influxdata/influxdb1-client/models
+github.com/influxdata/influxdb1-client/pkg/escape
 # github.com/konsorten/go-windows-terminal-sequences v1.0.3
 github.com/konsorten/go-windows-terminal-sequences
 # github.com/mattn/go-colorable v0.1.6
@@ -24,6 +29,9 @@ github.com/mgutz/ansi
 # github.com/mgutz/logxi v0.0.0-20161027140823-aebf8a7d67ab
 ## explicit
 github.com/mgutz/logxi/v1
+# github.com/rancher/wrangler v0.6.1
+## explicit
+github.com/rancher/wrangler/pkg/signals
 # github.com/russross/blackfriday/v2 v2.0.1
 github.com/russross/blackfriday/v2
 # github.com/shurcooL/sanitized_anchor_name v1.0.0
